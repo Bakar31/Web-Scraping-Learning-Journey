@@ -8,6 +8,7 @@ url = 'https://webscraper.io/test-sites/e-commerce/allinone/phones/touch'
 page = requests.get(url)
 soup = BeautifulSoup(page.text, 'lxml')
 
+#extracting useful informations
 names = soup.find_all('a', {'class': 'title'})
 prices = soup.find_all('h4', {'class':'pull-right price'})
 reviews = soup.find_all('p', {'class':'pull-right'})
