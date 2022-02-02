@@ -17,6 +17,9 @@ imdb_link = driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/d
 time.sleep(5)
 
 #Scrolls until Jaws the movie is on the screen
-driver.execute_script('window.scrollTo(0,15000)')
+driver.execute_script('window.scrollTo(0,10000)')
 
-poster = driver.find_element_by_xpath('//*[@id="main"]/div/div[3]/div/div[50]/div[2]/a/img').screenshot('D:/Programming/Scraping/Udemy Course-1/Day-7/casablanca.png')
+# find and take ss
+poster = driver.find_element_by_xpath('//*[@id="main"]/div/div[3]/div/div[50]/div[2]/a/img')
+time.sleep(2)
+poster.screenshot('D:/Programming/Scraping/Udemy Course-1/Day-7/casablanca.png')
