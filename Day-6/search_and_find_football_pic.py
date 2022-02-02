@@ -16,3 +16,7 @@ images_tab.click()
 #find_pic
 pic = driver.find_element_by_xpath('//*[@id="islrg"]/div[1]/div[3]/a[1]/div[1]/img')
 pic.screenshot('D:/Programming/Scraping/Udemy Course-1/Day-6/football_1.png')
+
+#self scrolling
+while True:
+    driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
