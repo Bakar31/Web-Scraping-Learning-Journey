@@ -11,7 +11,7 @@ soup = BeautifulSoup(page.text, 'lxml')
 # accessing only table html
 table = soup.find('div', class_ = 'standings__table')
 
-# headers elements
+# header elements
 headers = table.find_all('th')
 
 # text headers
@@ -44,5 +44,5 @@ for row in value_table_rows:
 df.insert(loc=0, column='', value = entities)
 print(df.head())
 
-# Output as csv file.
+# Output as a csv file.
 df.to_csv('NFL Standings 2020.csv', index = False)
