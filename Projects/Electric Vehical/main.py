@@ -9,6 +9,7 @@ soup = BeautifulSoup(page.text, 'lxml')
 postings = soup.find_all('div', class_ = 'list-item')
 df = pd.DataFrame()
 
+# store all values in lists
 titles = []
 subtitles = []
 batteries = []
@@ -59,18 +60,19 @@ for posting in postings:
     
     print(title, subtitle, battery, weight, plug_type, size, number_of_seats, acceleration, car_range, topspeed, efficiency, fastcharge)
 
-print(len(titles))
-print(len(subtitles))
-print(len(batteries))
-print(len(weights))
-print(len(plug_types))
-print(len(number_of_seats_all))
-print(len(acceleration_all))
-print(len(topspeed_all))
-print(len(car_range_all))
-print(len(efficiency_all))
-print(len(fastcharge_all))
+# print(len(titles))
+# print(len(subtitles))
+# print(len(batteries))
+# print(len(weights))
+# print(len(plug_types))
+# print(len(number_of_seats_all))
+# print(len(acceleration_all))
+# print(len(topspeed_all))
+# print(len(car_range_all))
+# print(len(efficiency_all))
+# print(len(fastcharge_all))
 
+# columns of the dataframe
 df['Title'] = titles
 df['Subtitle'] = subtitles
 df['Battery'] = batteries
