@@ -1,5 +1,16 @@
 # Electric Vehical Database
-![car]()
+![car](https://github.com/Bakar31/Web-Scraping-Learning-History/blob/master/Projects/Electric%20Vehical/electronics%20vehicles.jpg)
 
 
-In this project I scrape all information about each vehical.
+In this project I scrape all information about each vehical in this website.
+The key features are:
+
+1. Name
+2. Acceleration
+3. Top Speed
+4. Range
+5. Weight
+6. Efficiency
+7. Number of Seats
+
+I used BeautifulSoup and requests for this project.
