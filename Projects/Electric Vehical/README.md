@@ -13,4 +13,5 @@ The key features are:
 6. Efficiency
 7. Number of Seats
 
-I used BeautifulSoup and requests for this project.
+I used BeautifulSoup and requests libraries for this project.
+All the outputs are converted to into a csv file for easy use.
